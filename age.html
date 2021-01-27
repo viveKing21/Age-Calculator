@@ -1,0 +1,53 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="container" >
+	<form name="form" onsubmit="return ageResult()">
+		<h1><span>Age</span> Calculator</h1>
+		Today's Date
+		<input type="date" name="TDate"><br><br>
+		Date of Birth
+		<input type="date" name="TDOB" value="2001-03-30" >
+		<input type="submit" id="btn" value="Calculate">
+		<div id="age">
+			<h4>Your Age</h4>
+			<div><span data-year>00</span><br>Years</div>
+			<div><span data-month>00</span><br>Months</div>
+			<div><span data-day>00</span><br>Days</div>
+			<div class="extras"></div>
+		</div>
+		<div class="dropdown" onclick="showExtras(this)">EXTRA</div>
+        <div  id="age" style="height:auto;padding-bottom:50px;margin-top:25px" class="on">
+        	<h4>Next Birthday</h4><div class="dayofnb"></div>
+        	<div class="Nb"><span data-nextBdMonth>00</span>Months</div>
+        	<div class="Nb"><span data-nextBdday>00</span>Days</div>
+        </div>
+        <div  id="age" style="height:auto;padding-bottom:50px" class="on">
+        	<h4>Time Spend on Earth</h4><div class="dayofnb"></div>
+        	<table>
+        		<tr><td>Total Years &nbsp;&nbsp;&nbsp;: </td><td data-value="Year">00</td></tr>
+        		<tr><td>Total Months &nbsp;&nbsp;&nbsp;: </td><td data-value="Month">00</td></tr>
+        		<tr><td>Total Days &nbsp;&nbsp;&nbsp;: </td><td data-value="Day">00</td></tr>
+        		<tr><td>Total Hours &nbsp;&nbsp;&nbsp;: </td><td data-value="Hour">00</td></tr>
+        		<tr><td>Total Minutes &nbsp;&nbsp;&nbsp;: </td><td data-value="Minute">00</td></tr>
+        		<tr><td>Total Seconds &nbsp;&nbsp;&nbsp;: </td><td data-value="Second">00</td></tr>
+        		<tr><td>Total Miliseconds &nbsp;&nbsp;&nbsp;: </td><td data-value="Milisec">00</td></tr>
+        	</table>
+        </div>
+        <div  id="age" style="height:auto;padding-bottom:50px" class="on">
+        	<h4>Next Birthdays</h4><div class="dayofnb"></div>
+        	<table>
+        		<tr><td><span class="NXB"></span>&nbsp;&nbsp;&nbsp;: </td><td class="showday">00</td></tr>
+        		<tr><td><span class="NXB"></span>&nbsp;&nbsp;&nbsp;: </td><td class="showday">00</td></tr>
+        		<tr><td><span class="NXB"></span>&nbsp;&nbsp;&nbsp;: </td><td class="showday">00</td></tr>
+        		<tr><td><span class="NXB"></span>&nbsp;&nbsp;&nbsp;: </td><td class="showday">00</td></tr>
+        		<tr><td><span class="NXB"></span>&nbsp;&nbsp;&nbsp;: </td><td class="showday">00</td></tr>
+        		<tr><td><span class="NXB"></span>&nbsp;&nbsp;&nbsp;: </td><td class="showday">00</td></tr>
+        		<tr><td><span class="NXB"></span>&nbsp;&nbsp;&nbsp;: </td><td class="showday">00</td></tr>
+        		<tr><td><span class="NXB"></span>&nbsp;&nbsp;&nbsp;: </td><td class="showday">00</td></tr>
+        		<tr><td><span class="NXB"></span>&nbsp;&nbsp;&nbsp;: </td><td class="showday">00</td></tr>
+        		<tr><td><span class="NXB"></span>&nbsp;&nbsp;&nbsp;: </td><td class="showday">00</td></tr>
+        	</table>
+        </div>
+	</form>
+	
+</div>
+<script type="text/javascript" src="script.js"></script>
